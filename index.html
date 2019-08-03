@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="./img/logo-netpoint.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./styles.css">
+        <title>Teste Frontend VAGAS.com</title>
+    </head>
+
+    <body>
+        <section class="boxSizing">
+        <!--Header-->
+        <section class="header">
+            <div class="header-text">
+                <h1 class="title">Formulário para compra de <span>Pacote de Stickers</span></h1>
+            </div>
+        </section>
+        <!--End header-->
+
+        <!--Form-->
+        <section class="inForm">
+            <div class="container">
+                <form class="form">
+                    <div class="form-texts">
+                        <h2 class="form-title">Quais Stickers</h2>
+                    </div>
+                    <!--Aqui o correto seria a label primeiro depois o input, porém para seguir no layout apenas coloquei o input antes (espero que não tenha problema rs)-->
+                    <fieldset class="fieldset space">
+                        <input type="checkbox" id="check1"/>
+                        <label for="sticker-react">React</label>
+                    </fieldset>
+                    <fieldset class=" fieldset space ">
+                        <input type="checkbox"/ id="check2">
+                        <label for="sticker-vue">Vue</label>
+                    </fieldset>
+                    <fieldset class="fieldset space ">
+                        <input type="checkbox" id="check3" />
+                        <label for="sticker-angular">Angular</label>
+                    </fieldset>
+                    <div class="form-texts">
+                        <h2 class="form-title">Quantos stickers de cada?</h2>
+                    </div>
+                    <fieldset class="fieldset space-md">
+                    <div class="counter space">
+                        <button id="btnMin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+                            <path d="M4.667 0A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667zm28 23.333H9.333v-4.666h23.334v4.666z"/></svg>
+                        </button>
+                        <input id='campo' type="text" placeholder="0" value="" />
+                        <button id="btnMax">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+                            <path d="M4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42zm4.666-23.333h9.334V9.333h4.666v9.334h9.334v4.666h-9.334v9.334h-4.666v-9.334H9.333v-4.666z" /></svg>
+                        </button>
+                    </div>
+                    </fieldset>
+                    <fieldset class="fieldset space-md">
+                        <div class="label">Observações:</div>
+                        <div class="space"></div>
+                        <textarea name="descricao" placeholder="Alguma dúvida? Recado?" id='campoCaixa'></textarea>
+                    </fieldset>
+                    <footer class="footer space-md">
+                        <!--Validação-->
+                        <div class="none divErro" id="divError">
+                            <p>Formulário não enviado, preencha todos os campos corretamente :(</p>
+                        </div>
+                        <div class="none divSucesso" id="divSucess">
+                            <p>Formulário enviado com sucesso! Agora é só esperar chegar :)</p>
+                        </div>
+                        <p class="caixa"></p>
+                        <!--Validação-->
+                        <button id="submit">Enviar</button>
+                    </footer>
+                </form>
+            </div>
+        </section>
+        <!--End Form-->
+        </section>
+        <script src="scripts/jquery-3.4.1.min.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
