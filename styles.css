@@ -1,3 +1,5 @@
+/*Normalizes*/
+
 @import url("https://rsms.me/inter/inter.css");
 
 html {
@@ -35,14 +37,14 @@ body {
   color: #071723;
 }
 
+/*page-commons*/
 .boxSizing {
-    background-color: #f2f2f2;
+    background-color: #ffff;
     border-radius: 8px;
     box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
     margin: 20px auto;
     width: 550px;
 }
-
 
 .container {
   background-color: #f2f2f2;
@@ -61,14 +63,8 @@ body {
   margin-bottom: 32px;
 }
 
-.form-title {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 0 32px;
-}
 
-
-
+/*Header*/
 .header {
     background-image: url(img/header.bg.png);
     background-position: center right;
@@ -96,6 +92,13 @@ body {
   line-height: 1.46;
 }
 
+/*Form*/
+.form-title {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 32px;
+}
+
 .form textarea {
   background: #dde3e9;
   border: 1px solid #2f3676;
@@ -117,6 +120,7 @@ body {
     height: 31px;
 }
 
+/*Counter*/
 .counter svg {
   fill: #2f3676;
 }
@@ -131,6 +135,7 @@ body {
   width: 60px;
 }
 
+/*Footer*/
 .footer {
   padding: 32px;
   background: #dde3e9;
@@ -186,12 +191,13 @@ body {
 }
 
 
+
+/*Responsividade*/
 @media(max-width: 950px ){
     .header .title{
-        width: 32%;
+        width: 43%;
     }
 }
-
 
 @media(max-width: 450px){
     .header .title{

@@ -1,12 +1,10 @@
-
 let count = document.getElementById('campo');
 let countMin = document.getElementById('btnMin');
 let countMax = document.getElementById('btnMax')
 let sucess = document.getElementById('divSucess')
 let error = document.getElementById('divError');
 let sum= document.getElementById('submit');
-let dis = document.getElementById('dis');
-
+let esc = document.getElementById('campoCaixa')
 
 countMin.addEventListener("click", function(e){
     e.preventDefault();
